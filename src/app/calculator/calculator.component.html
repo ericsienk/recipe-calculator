@@ -1,0 +1,20 @@
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Original<br />Quantity</th>
+        <th>Calculation</th>
+        <th>Scaled<br />Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of ingredients">
+        <td>{{ i.name }}</td>
+        <td>{{ i.quantity }}{{ i.unit }}</td>
+        <td>{{ this.calculation }}</td>
+        <td>{{ i.scaledQuantity }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
